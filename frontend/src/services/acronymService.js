@@ -9,3 +9,9 @@ export const getAcronym = (acronimo) => {
 export const historialAcronyms = () => {
   return axios.get(`${API}/historial/`);
 };
+
+export const historialAcronymsPorFecha = (desde, hasta) => {
+  return axios.get(`${API}/historial/fecha`, {
+    params: { desde, hasta },
+  });
+};
