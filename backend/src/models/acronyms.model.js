@@ -10,7 +10,11 @@ export const guardarAcronimo = async (acronimo) => {
 
 export const obtenerHistorial = async () => {
   const [rows] = await db.query(
-    "SELECT * FROM acronimos_consultados ORDER BY fecha_consulta DESC"
+    `SELECT 
+      acronimo, 
+      DATE_FORMAT(fecha_consulta, '%d/%m/%Y %r') AS fecha_legible 
+     FROM acronimos_consultados 
+     ORDER BY fecha_consulta DESC`
   );
   return rows;
 };

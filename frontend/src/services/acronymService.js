@@ -6,10 +6,6 @@ export const getAcronym = (acronimo) => {
   return axios.get(`${API}/buscar/${acronimo}`);
 };
 
-export const crearAcronym = (acronimo) => {
-  return axios.post(API, { acronimo });
-};
-
-export const listarAcronyms = () => {
-  return axios.get(API);
+export const historialAcronyms = () => {
+  return axios.get(`${API}/historial/`);
 };
