@@ -1,6 +1,6 @@
 ## Estructura del Proyecto
-backend - API REST en Node.js + Express + MySQL
-frontend - Interfaz de usuario desarrollada en React
+- backend - API REST en Node.js + Express + MySQL
+- frontend - Interfaz de usuario desarrollada en React
 
 ## Requisitos
 Asegúrate de tener instalado:
